@@ -8,23 +8,20 @@ import { OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  public drinks?: Drinks[];
   public mydata: any;
-  public mydata$: any = [];
   
 
   constructor(private apiget: ApigetService) { }
 
   
 ngOnInit(): void{
-    this.apiget.getData().subscribe((data) =>{
-      this.mydata = data;
-    })
+    this.getData();
 }
   
-
+getData(): void{
+  this.apiget.getData().subscribe((data) =>{
+    this.mydata = data;
+  })
+}
 }
 
-interface Drinks {
-  strDrink: string;
-}
