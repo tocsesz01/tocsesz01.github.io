@@ -1,20 +1,6 @@
 h1 {
     text-align: center;
 }
-.button {
-    text-align: center;
-    border-radius:50%;
-    border: 1px brown solid;
-    color: #f0b81e;
-    background-color: brown;
-    padding:1.5%;
-}
-.button:hover{
-    background-color: rgba(128, 32, 32, 0.651);
-}
-.button:active{
-    background-color: rgba(165, 42, 42, 0.397);
-}
 div {
     text-align: center;
 }

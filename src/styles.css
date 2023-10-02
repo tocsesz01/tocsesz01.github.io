@@ -2,3 +2,17 @@
 div, h1 {
 font-family: fantasy;
 }
+.bgcover{
+    width:70%;
+    background-color: wheat;
+    margin-right: 15%;
+    margin-left:15%;
+    height:110%;
+    padding-bottom: 3%;
+}
+body{
+    background-image: url("assets/bgdrink.jpg");
+    background-repeat: no-repeat;
+    background-attachment:initial;
+    background-size: cover;
+}

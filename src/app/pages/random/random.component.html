@@ -1,8 +1,10 @@
+
 <div *ngFor="let d of mydata.drinks">
-    <div ><button class="button" (click)="getData()">Regenerate</button></div>
     <br>
-    <table>
-    <tr>
+    <button class="btn btn-outline-primary text-body" (click)="getData()">Regenerate</button>
+    <br><br>
+    <table class="table bg-primary">
+    <tr class="tr">
       <td class="cocktail-name" width="30%">Name:</td>
       <td>{{ d.strDrink }}</td>
     </tr>
