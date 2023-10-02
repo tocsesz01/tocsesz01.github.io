@@ -14,5 +14,7 @@ body{
     background-image: url("assets/bgdrink.jpg");
     background-repeat: no-repeat;
     background-attachment:initial;
-    background-size: cover;
+    background-size:cover;
+    width:100%;
+    height: 100%;
 }

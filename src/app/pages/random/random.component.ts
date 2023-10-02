@@ -15,11 +15,11 @@ export class RandomComponent implements OnInit {
 
   
 ngOnInit(): void{
-    this.getData();
+    this.getDataRandom();
 }
   
-getData(): void{
-  this.apiget.getData().subscribe((data) =>{
+getDataRandom(): void{
+  this.apiget.getDataRandom().subscribe((data) =>{
     this.mydata = data;
   })
 }

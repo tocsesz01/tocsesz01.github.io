@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './pages/about/about.component';
 import { RandomComponent } from './pages/random/random.component';
 import { HeaderComponent } from './components/header/header.component';
+import { SearchComponent } from './pages/search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     RandomComponent,
-    HeaderComponent
+    HeaderComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

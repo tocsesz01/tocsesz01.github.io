@@ -8,20 +8,17 @@ import { OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  public mydata: any;
   
 
-  constructor(private apiget: ApigetService) { }
+  constructor() { }
 
   
 ngOnInit(): void{
-    this.getData();
+    
 }
   
 getData(): void{
-  this.apiget.getData().subscribe((data) =>{
-    this.mydata = data;
-  })
+  
 }
 }
 

@@ -1,9 +1,12 @@
 .links:visited, .links:link{
     text-decoration: none;
     color: #333333;
+    border:2px solid brown;
+    padding: 30%;
+    border-radius: 8%;
 }
 .links:hover{
-    color: #9b9696;
+    background-color: brown;
 }
 .links:active{
     color: #b48651;

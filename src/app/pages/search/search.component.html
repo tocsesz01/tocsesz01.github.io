@@ -1,0 +1,10 @@
+<div class="center  searchfield">
+    Search for cocktail by name:
+    <input type="text" #box (keyup)="getValue(box.value)" class="form-control" [maxLength]="30"/>
+    <br>
+    <button class="button btn btn-outline-primary text-body" (click)="getSearchResults()">Search</button>
+</div>
+<div *ngFor="let D of mydata.drinks">
+    <div> {{ D.strDrink }} </div>
+</div>
+

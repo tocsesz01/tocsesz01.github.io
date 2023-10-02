@@ -8,7 +8,13 @@ export class ApigetService {
 
   constructor(private http: HttpClient) { }
 
-  getData(){
+  getDataRandom(){
     return this.http.get('https://www.thecocktaildb.com/api/json/v1/1/random.php');
   }
+
+  getDataSearch(search: string){
+    return this.http.get('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=' + search);
+  }
+
+
 }
