@@ -4,10 +4,16 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AboutComponent } from './pages/about/about.component';
+import { RandomComponent } from './pages/random/random.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AboutComponent,
+    RandomComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

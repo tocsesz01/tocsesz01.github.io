@@ -1,0 +1,48 @@
+<div *ngFor="let d of mydata.drinks">
+    <div ><button class="button" (click)="getData()">Regenerate</button></div>
+    <br>
+    <table>
+    <tr>
+      <td class="cocktail-name" width="30%">Name:</td>
+      <td>{{ d.strDrink }}</td>
+    </tr>
+    <tr>
+      <td>Category:</td>
+      <td>{{ d.strCategory }}</td>
+    </tr>
+    <tr>
+      <td>Type:</td>
+      <td>{{ d.strAlcoholic }}</td>
+    </tr>
+    <tr>
+      <td>Glass type:</td>
+      <td>{{ d.strGlass }}</td>
+    </tr>     
+  </table>
+  <br>
+    <img src="{{ d.strDrinkThumb }}" width="100" height="100">
+    <br>
+    <div>Instructions: {{ d.strInstructions }}</div>
+    <br>
+    <div>Istruzioni: {{d.strInstructionsIT}}</div>
+    <br>
+    <div>Ingredients:</div>
+    <div class="ingcon">
+    <div class="ing">{{ d.strMeasure1 }} {{ d.strIngredient1 }}</div>
+    <div class="ing">{{ d.strMeasure2 }} {{ d.strIngredient2 }}</div>
+    <div class="ing">{{ d.strMeasure3 }} {{ d.strIngredient3 }}</div>
+    <div class="ing">{{ d.strMeasure4 }} {{ d.strIngredient4 }}</div>
+    <div class="ing">{{ d.strMeasure5 }} {{ d.strIngredient5 }}</div>
+    <div class="ing">{{ d.strMeasure6 }} {{ d.strIngredient6 }}</div>
+    <div class="ing">{{ d.strMeasure7 }} {{ d.strIngredient7 }}</div>
+    <div class="ing">{{ d.strMeasure8 }} {{ d.strIngredient8 }}</div>
+    <div class="ing">{{ d.strMeasure9 }} {{ d.strIngredient9 }}</div>
+    <div class="ing">{{ d.strMeasure10 }} {{ d.strIngredient10 }}</div>
+    <div class="ing">{{ d.strMeasure11 }} {{ d.strIngredient11 }}</div>
+    <div class="ing">{{ d.strMeasure12 }} {{ d.strIngredient12 }}</div>
+    <div class="ing">{{ d.strMeasure13 }} {{ d.strIngredient13 }}</div>
+    <div class="ing">{{ d.strMeasure14 }} {{ d.strIngredient14 }}</div>
+    <div class="ing">{{ d.strMeasure15 }} {{ d.strIngredient15 }}</div>
+  </div>
+  </div>
+
