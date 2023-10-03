@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ApigetService } from 'src/services/apiget.service';
 import { OnInit } from '@angular/core';
+import { createInjectableType } from '@angular/compiler';
 
 @Component({
   selector: 'app-search',
@@ -10,6 +11,7 @@ import { OnInit } from '@angular/core';
 export class SearchComponent implements OnInit{
   public mydata: any;
   public searchresult: any;
+  public chosenId: string;
 
   constructor(private apiget: ApigetService){}
 
@@ -25,6 +27,15 @@ export class SearchComponent implements OnInit{
     this.apiget.getDataSearch(this.searchresult).subscribe((data) =>{
       this.mydata = data;
     });
+  }
+
+  getChosenId(chosen :string): void{
+    console.log('got ID:', chosen)
+    this.apiget.loadedId = chosen;
+  }
+
+  getId(id: string){
+    return this.chosenId;
   }
 
 }

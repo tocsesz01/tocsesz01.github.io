@@ -8,6 +8,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { RandomComponent } from './pages/random/random.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SearchComponent } from './pages/search/search.component';
+import { CocktailComponent } from './pages/cocktail/cocktail.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { SearchComponent } from './pages/search/search.component';
     AboutComponent,
     RandomComponent,
     HeaderComponent,
-    SearchComponent
+    SearchComponent,
+    CocktailComponent
   ],
   imports: [
     BrowserModule,

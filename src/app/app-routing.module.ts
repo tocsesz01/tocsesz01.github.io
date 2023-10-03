@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './pages/about/about.component';
 import { RandomComponent } from './pages/random/random.component';
 import { SearchComponent } from './pages/search/search.component';
+import { CocktailComponent } from './pages/cocktail/cocktail.component';
 
 const routes: Routes = [{
   path: '',
@@ -19,6 +20,11 @@ const routes: Routes = [{
   path: 'search',
   component: SearchComponent,
   title: "Cocktail chooser - Search"
+},
+{
+  path: 'cocktail',
+  component: CocktailComponent,
+  title: "Cocktail chooser - cocktail"
 }];
 
 @NgModule({
