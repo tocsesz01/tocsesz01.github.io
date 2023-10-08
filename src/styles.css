@@ -7,8 +7,9 @@ font-family: 'Fantasy', 'Times New Roman', Times, serif;
     background-color: wheat;
     margin-right: 15%;
     margin-left:15%;
-    height:110%;
+    height:100%;
     padding-bottom: 3%;
+    background-size:cover;
 }
 body{
     background-image: url("assets/bgdrink.jpg");
