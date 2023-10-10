@@ -15,15 +15,14 @@ export class SearchComponent implements OnInit{
 
   constructor(private apiget: ApigetService){}
 
-  ngOnInit(): void{
-
-  }
+  ngOnInit(): void{}
 
   getValue(value: string){
     this.searchresult = value;
   }
 
   getSearchResults(): void{
+    console.log(this.mydata)
     this.apiget.getDataSearch(this.searchresult).subscribe((data) =>{
       this.mydata = data;
     });

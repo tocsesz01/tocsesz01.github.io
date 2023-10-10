@@ -1,10 +1,12 @@
 <div class="center  searchfield">
     Search for cocktail by name:
     <input type="text" #box (keyup)="getValue(box.value)" class="form-control" [maxLength]="30"/>
+    <div class="searchError" *ngIf="mydata.drinks === null">Please enter a valid cocktail name</div>
     <br>
     <button class="button btn btn-outline-primary text-body" (click)="getSearchResults()">Search</button>
 </div>
-<div *ngFor="let D of mydata.drinks">
+<div *ngFor="let D of mydata.drinks" >
     <a routerLink="../cocktail" (click)="getChosenId(D.idDrink)"> {{ D.strDrink }} </a>
 </div>
+
 
